@@ -1,0 +1,10 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.busy-spinner-icon {
+  font-size: 24px;
+}
+.busy-spinner-icon-large {
+  font-size: 48px;
+}
