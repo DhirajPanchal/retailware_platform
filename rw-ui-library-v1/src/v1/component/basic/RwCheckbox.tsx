@@ -14,9 +14,7 @@ export const RwCheckbox: React.FC<RwCheckboxProps> = ({
 }) => {
   const base =
     "inline-flex items-center gap-2 cursor-pointer text-sm font-medium";
-  const checkboxStyle = theme
-    ? "accent-[var(--btn-bg)]"
-    : "accent-gray-500";
+  const checkboxStyle = theme ? "accent-[var(--solid-bg)]" : "accent-gray-500";
 
   return (
     <label className={`${base} ${className}`}>

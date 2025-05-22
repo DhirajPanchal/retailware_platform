@@ -16,7 +16,7 @@ export interface RwComboProps
 export const RwCombo: React.FC<RwComboProps> = ({
   label,
   options,
-  theme = true,
+  theme = false,
   searchable = false,
   className = "",
   ...rest
@@ -33,7 +33,7 @@ export const RwCombo: React.FC<RwComboProps> = ({
   const base =
     "px-3 py-2 border rounded text-sm cursor-pointer transition duration-200";
   const themedStyle = theme
-    ? "bg-white border-[var(--btn-bg)] text-[var(--btn-gray-600)]"
+    ? "bg-white border-[var(--solid-bg)] text-[var(--solid-bg)]"
     : "bg-white border-gray-400 text-gray-700";
 
   return (

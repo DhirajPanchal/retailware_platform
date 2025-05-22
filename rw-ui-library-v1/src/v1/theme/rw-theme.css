@@ -1,4 +1,33 @@
 :root {
+  --solid-bg: black;
+  --solid-text: white;
+  --solid-border: black;
+  --solid-hover-bg: lightgray;
+
+  --input-accent: black;
+  --input-label-color: black;
+}
+
+.rw-hsbc-theme {
+  --solid-bg: #d90429;
+  --solid-text: #ffffff;
+  --solid-border: #f2f4f7;
+  --solid-hover-bg: #d90429(210, 190, 190);
+
+  --input-accent: #d90429;
+  --input-label-color: #800000;
+}
+
+.rw-blue-theme {
+  --solid-bg: #1e3a8a;
+  --solid-text: #ffffff;
+  --solid-border: #f2f4f7;
+  --solid-hover-bg: #1e3a8a;
+
+  --input-accent: #1e3a8a;
+  --input-label-color: #0f172a;
+}
+/* :root {
   --btn-bg: black;
   --btn-text: white;
   --btn-border: black;
@@ -27,4 +56,4 @@
   --input-accent: #1e3a8a;
   --input-label-color: #0f172a;
 }
- 
+  */

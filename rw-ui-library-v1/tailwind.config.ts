@@ -6,10 +6,10 @@ const config: Config = {
     extend: {
       colors: {
         btn: {
-          bg: "var(--btn-bg)",
-          text: "var(--btn-text)",
-          border: "var(--btn-border)",
-          hover: "var(--btn-hover-bg)",
+          bg: "var(--solid-bg)",
+          text: "var(--solid-text)",
+          border: "var(--solid-border)",
+          hover: "var(--solid-hover-bg)",
         },
       },
     },
@@ -18,4 +18,3 @@ const config: Config = {
 };
 
 export default config;
- 

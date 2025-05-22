@@ -39,6 +39,7 @@ export default function BasicComponentHome() {
           With RwBusySpinner
           <RwBusySpinner />
         </RwButton>
+
         <div className="flex gap-4">
           <RwBusySpinner iconClassName="busy-spinner-icon-large" />
           <RwBusySpinner isLoading={true} />
@@ -56,21 +57,36 @@ export default function BasicComponentHome() {
           <RwCheckbox value="agree" label="I agree to terms" />
           <RwCheckbox value="updates" label="Subscribe to updates" />
         </div>
-      </div>
-      <div className="flex flex-col gap-4">
-        <RwCombo
-          label="Select Fruit"
-          options={[
-            { label: "Apple", value: "apple" },
-            { label: "Banana", value: "banana" },
-            { label: "Cherry", value: "cherry" },
-            { label: "Orange", value: "orange" },
-            { label: "Pineapple", value: "pineapple" },
-          ]}
-        />
 
+        <div className="flex gap-4">
+          <RwCombo
+            label="Select Fruit"
+            options={[
+              { label: "Apple", value: "apple" },
+              { label: "Banana", value: "banana" },
+              { label: "Cherry", value: "cherry" },
+              { label: "Orange", value: "orange" },
+              { label: "Pineapple", value: "pineapple" },
+            ]}
+          />
+
+          <RwCombo
+            label="Select Fruit"
+            theme
+            options={[
+              { label: "Apple", value: "apple" },
+              { label: "Banana", value: "banana" },
+              { label: "Cherry", value: "cherry" },
+              { label: "Orange", value: "orange" },
+              { label: "Pineapple", value: "pineapple" },
+            ]}
+          />
+        </div>
+      </div>
+
+      <div className="flex flex-col gap-4">
         <RwPanel
-          title="User Preferences"
+          title="Default"
           icon={<span>👤</span>}
           collapsible
           footer={
@@ -86,7 +102,7 @@ export default function BasicComponentHome() {
         </RwPanel>
 
         <RwPanel
-          title="User Preferences"
+          title="solid rounded"
           icon={<span>👤</span>}
           collapsible
           rounded
@@ -104,7 +120,7 @@ export default function BasicComponentHome() {
         </RwPanel>
 
         <RwPanel
-          title="User Preferences"
+          title="theme"
           icon={<span>👤</span>}
           collapsible
           theme
@@ -121,7 +137,7 @@ export default function BasicComponentHome() {
         </RwPanel>
 
         <RwPanel
-          title="User Preferences"
+          title="theme solid rounded"
           icon={<span>👤</span>}
           collapsible
           theme

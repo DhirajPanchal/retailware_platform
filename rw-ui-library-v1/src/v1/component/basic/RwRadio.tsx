@@ -14,9 +14,7 @@ export const RwRadio: React.FC<RwRadioProps> = ({
 }) => {
   const base =
     "inline-flex items-center gap-2 cursor-pointer text-sm font-medium";
-  const radioStyle = theme
-    ? "accent-[var(--btn-bg)]"
-    : "accent-gray-500"; // fallback for non-themed
+  const radioStyle = theme ? "accent-[var(--solid-bg)]" : "accent-gray-500"; // fallback for non-themed
 
   return (
     <label className={`${base} ${className}`}>
