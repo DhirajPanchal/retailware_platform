@@ -13,15 +13,20 @@ export interface RwPanelProps {
   footer?: React.ReactNode;
 }
 
+const bodyStyleMap: Record<string, string> = {
+  solid: "bg-gray-400 text-white border-b border-gray-400",
+  outline: "text-gray-600 border-b border-gray-400",
+  solid_theme: "bg-[var(--solid-bg)] text-[var(--solid-text)] border-b border-[var(--solid-border)]",
+  outline_theme: "bg-transparent text-[var(--solid-bg)] border-b border-gray-400",
+};
+
 const headerStyleMap: Record<string, string> = {
   solid: "bg-gray-400 text-white border-b border-gray-400",
   outline: "text-gray-600 border-b border-gray-400",
-
-  solid_theme:
-    "bg-[var(--solid-bg)] text-[var(--solid-text)] border-b border-[var(--solid-border)]",
-  outline_theme:
-    "bg-transparent text-[var(--solid-bg)] border-b border-gray-400",
+  solid_theme: "bg-[var(--solid-bg)] text-[var(--solid-text)] border-b border-[var(--solid-border)]",
+  outline_theme: "bg-transparent text-[var(--solid-bg)] border-b border-gray-400",
 };
+
 
 export const RwPanel: React.FC<RwPanelProps> = ({
   title,
@@ -30,13 +35,14 @@ export const RwPanel: React.FC<RwPanelProps> = ({
   solid = false,
   theme = false,
   rounded = false,
-  className = "border-2 border-gray-400 p-2",
+  className = "",
   children,
   footer,
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
 
-  const base = "transition duration-200 shadow-md flex flex-col p-0";
+  const base =
+    "transition duration-200 flex flex-col border-1 border-gray-400 shadow-md";
 
   const borderRadius = rounded ? "rounded-lg overflow-hidden" : "";
 
